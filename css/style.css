@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Vinnytsia Sans";
+    src: url("../fonts/VinnytsiaSansReg.ttf") format("truetype");
+    }
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Vinnytsia Sans";
+    font-size: 14px;
+    color: #fff;
+    background-color: #D9766F; 
+    background-image: url(../img/bg-left.png), url(../img/bg-right.png);
+    background-position: left 4% bottom, right 1% bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 45vh, 100vh;
+    
+}
+.header {
+    position: absolute;
+    left: 6vw;
+    top: 6vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;    
+}
+
+h2 {
+    font-size: calc(3rem + 3vw - 2vh);
+    margin-bottom: -1%;
+}
+.header__p {
+    font-size: calc(1rem + 1vw - 2vh);
+    font-weight: 500;
+    right: 0;
+    max-width: 95%;
+    text-align: right;
+}
+.header__p p {
+    width: 85%;
+    
+}
+.main {
+    position: absolute;
+    top: 10vh;
+    left: 44vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main p {
+    float: right;
+}
+
+.main-dog img {
+    width: 13vw;
+}
+
+input, button {
+    padding: 1em;
+    margin: 1em;
+}
+
+.input {
+    margin: 2em;
+}
+input {
+    display: block;
+    padding: 18px 40px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background: #FFE1EE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: transparent;
+    width: 170px;
+    outline: none;
+    text-align: center;
+}
+.input1 {
+   border-bottom: 1px solid #42a1ee;
+}
+input::placeholder {
+    color: rgb(184, 185, 185);
+}
+input:focus {
+    box-shadow: 0px 4px 4px #42a1ee;
+}
+button {
+    background: #42a1ee;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 18px 40px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    border: transparent;
+    transition: all 0.3s ease-in;
+}
+button:hover {
+    background: #1257eb;
+    cursor: pointer;
+}
+button:active {
+	position: relative;
+	top: 1px;
+}
+
+.discount-price {
+    margin-top: 2em;
+    background: #ffb833;
+    padding: 18px 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+
+.result {
+    color: #000;
+    background: #ffffffc9;
+    line-height: 3.8em;
+    height: 3.8em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -1em;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 1em;
+    left: 40%;
+}
